@@ -7,7 +7,7 @@ import AnimatedCard from "./AnimatedCard";
 
 export default function Journey() {
   return (
-    <section id="journey" className="py-24 border-t border-slate-900 bg-slate-950/30">
+    <section id="journey" className="py-24 border-t border-slate-200 bg-gradient-to-b from-white to-slate-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <motion.h2
@@ -35,7 +35,7 @@ export default function Journey() {
               <span className="absolute -left-[17px] top-1.5 flex items-center justify-center w-8 h-8 rounded-full bg-slate-950 border border-slate-800 text-blue-400">
                 <Briefcase size={14} />
               </span>
-              <div className="p-6 bg-slate-900/30 border border-slate-800/80 rounded-xl hover:border-slate-700 transition-colors">
+              <div className=" p-6 bg-white border border-slate-200 rounded-xl shadow-lg hover:shadow-xl hover:border-blue-300 transition-all duration-300 ">
                 <span className="inline-block px-2.5 py-1 text-[11px] bg-blue-500/10 border border-blue-500/20 text-blue-400 font-semibold rounded-md mb-4 font-mono">
                   {milestone.year}
                 </span>
