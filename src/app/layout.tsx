@@ -14,33 +14,60 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Alexander Wright | Lead Full-Stack Engineer Portfolio",
-  description: "Professional portfolio of Alexander Wright, Lead Full-Stack Engineer. Specializing in high-performance React/Next.js ecosystems, TypeScript, Tailwind CSS, FastAPI, and scalable AI system integrations.",
-  keywords: ["Alexander Wright", "Full-Stack Engineer", "Software Architect", "Next.js", "React Portfolio", "TypeScript developer", "FastAPI", "Tailwind CSS v4", "Framer Motion animations"],
-  authors: [{ name: "Alexander Wright" }],
-  creator: "Alexander Wright",
+  title: "Diki Wahyudin | Front-End Developer",
+  description:
+    "Portfolio pribadi Diki Wahyudin, Front-End Developer yang berfokus pada pengembangan website modern menggunakan Next.js, React, TypeScript, Tailwind CSS, dan Supabase.",
+
+  keywords: [
+    "Diki Wahyudin",
+    "Front-End Developer",
+    "Web Developer Indonesia",
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Supabase",
+    "JavaScript",
+    "Portfolio",
+  ],
+
+  authors: [
+    {
+      name: "Diki Wahyudin",
+    },
+  ],
+
+  creator: "Diki Wahyudin",
+
   openGraph: {
-    title: "Alexander Wright | Lead Full-Stack Engineer Portfolio",
-    description: "Explore the digital products, advanced interfaces, and backend systems built by Alexander Wright.",
-    url: "https://wright-dev.io",
-    siteName: "Alexander Wright Portfolio",
+    title: "Diki Wahyudin | Front-End Developer",
+    description:
+      "Selamat datang di portfolio pribadi Diki Wahyudin. Menampilkan project dan kemampuan dalam membangun aplikasi web modern.",
+
+    url: "https://fortofolio-cyan.vercel.app",
+
+    siteName: "Portfolio Diki Wahyudin",
+
     images: [
       {
-        url: "https://wright-dev.io/og-image.jpg",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Alexander Wright Portfolio Preview",
+        alt: "Portfolio Diki Wahyudin",
       },
     ],
-    locale: "en_US",
+
+    locale: "id_ID",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "Alexander Wright | Lead Full-Stack Engineer Portfolio",
-    description: "Explore the digital products, advanced interfaces, and backend systems built by Alexander Wright.",
-    creator: "@alexander_wright",
-    images: ["https://wright-dev.io/og-image.jpg"],
+    title: "Diki Wahyudin | Front-End Developer",
+    description:
+      "Portfolio modern yang dibangun menggunakan Next.js dan Tailwind CSS.",
+
+    images: ["/og-image.jpg"],
   },
 };
 
@@ -50,13 +77,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="id" className="scroll-smooth">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
+
       <body
-        className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-slate-950 text-slate-100 antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-white text-slate-900 antialiased`}
       >
         {children}
       </body>
