@@ -80,7 +80,7 @@ export default function Projects() {
                   {project.githubUrl && (
                     <a
                       href={project.githubUrl}
-                      target="_blank"
+                      target="https://management-panel-omega.vercel.app/"
                       rel="noopener noreferrer"
                       className="text-xs font-semibold text-slate-400 hover:text-white transition-colors flex items-center gap-1.5"
                     >
@@ -90,7 +90,7 @@ export default function Projects() {
                   {project.liveUrl && (
                     <a
                       href={project.liveUrl}
-                      target="_blank"
+                      target="https://my-company-theta-seven.vercel.app/"
                       rel="noopener noreferrer"
                       className="text-xs font-semibold text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1.5"
                     >
