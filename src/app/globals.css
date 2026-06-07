@@ -1,7 +1,12 @@
 @import "tailwindcss";
 
-@layer base {
-  html {
-    color-scheme: dark;
-  }
+@import "../../styles/animations.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
